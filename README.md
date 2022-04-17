@@ -6,8 +6,7 @@ This A-Frame component provides an easy way to integrate a full-body IK avatar i
 
 | Property   | Type     | Description                                                      | Default Value |
 | ---------- | -------- | ---------------------------------------------------------------- | ------------- |
-| modelEl    | selector | An `<a-asset-item>` with an avatar model attached                |               |
-| modelUrl   | string   | A local path or URL to an avatar model attached                  |               |
+| model      | model    | A selector or path to an avatar model                            |               |
 | player     | selector | An element representing the player/camera rig                    | #player       |
 | head       | selector | An element representing the main camera of the scene             | #head         |
 | leftHand   | selector | An element representing the tracked left hand                    | #leftHand     |
