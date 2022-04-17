@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="../dist/aframe-exokit-avatars.min.js"></script>
+    <title>A-Frame Exokit Avatars</title>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <a-asset-item id="model" src="./dan.glb"></a-asset-item>
+      </a-assets>
+      <a-plane id="ground" rotation="-90 0 0" color="green" height="10" width="10"></a-plane>
+      <a-light type="directional" intensity="0.5"></a-light>
+      <a-light type="ambient" intensity="0.5"></a-light>
+      <a-sky color="blue"></a-sky>
+      <a-entity avatar="model: #model"></a-entity>
+      <a-entity id="player">
+        <a-camera id="head" near="0.1" wasd-controls look-controls></a-camera>
+        <a-entity id="leftHand" tracked-controls="hand: left"></a-entity>
+        <a-entity id="rightHand" tracked-controls="hand: right"></a-entity>
+      </a-entity>
+    </a-scene>
+  </body>
+</html>

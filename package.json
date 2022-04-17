@@ -1,0 +1,26 @@
+{
+  "name": "aframe-exokit-avatars",
+  "version": "1.0.0",
+  "description": "A wrapper for the Exokit Avatars system in an A-Frame component.",
+  "main": "index.js",
+  "scripts": {
+    "build": "vite build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msub2/aframe-exokit-avatars.git"
+  },
+  "author": "Daniel Adams",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/msub2/aframe-exokit-avatars/issues"
+  },
+  "homepage": "https://github.com/msub2/aframe-exokit-avatars#readme",
+  "dependencies": {
+    "exokit-avatars": "github:msub2/avatars#master"
+  },
+  "type": "module",
+  "devDependencies": {
+    "vite": "^2.9.5"
+  }
+}
