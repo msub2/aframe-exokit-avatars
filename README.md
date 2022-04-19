@@ -11,7 +11,7 @@ The following is the most basic scene setup that will load in an avatar:
 <html>
   <head>
     <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
-    <script src="../dist/aframe-exokit-avatars.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aframe-exokit-avatars@1.0.2"></script>
     <title>A-Frame Exokit Avatars</title>
   </head>
   <body>
