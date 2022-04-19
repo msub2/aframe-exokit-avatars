@@ -34,6 +34,11 @@ The following is the most basic scene setup that will load in an avatar:
 </html>
 ```
 
+## Considerations
+
+- If implementing some form of touchpad or thumbstick movement, ensure your avatar is not parented under the player/camera rig object, as this will prevent the leg IK from functioning properly.
+- By default, the `tracked-controls` component in A-Frame reports controller pose based on target ray space by default instead of grip space (refer to the [WebXR Device API](https://immersive-web.github.io/webxr/#dom-xrinputsource-targetrayspace) for more details). It's more than likely there might be some noticeable offset in the hand positions from where your controllers are. There is currently an [open PR](https://github.com/aframevr/aframe/pull/5040) to let grip space be used for pose reporting, but in the meantime you may want to apply some manual offset to your controller pose to compensate.
+
 ## Schema
 
 | Property   | Type     | Description                                                      | Default Value |
