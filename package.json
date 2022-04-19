@@ -1,8 +1,8 @@
 {
   "name": "aframe-exokit-avatars",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A wrapper for the Exokit Avatars system in an A-Frame component.",
-  "main": "index.js",
+  "main": "dist/aframe-exokit-avatars.min.js",
   "scripts": {
     "build": "vite build"
   },
