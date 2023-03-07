@@ -71,7 +71,7 @@ AFRAME.registerComponent('avatar', {
       }, xhr => {}, rej);
     });
 
-    const microphoneMediaStream = await navigator.mediaDevices.getUserMedia({audio: true});
+    const microphoneMediaStream = this.visemes || !this.muted ? await navigator.mediaDevices.getUserMedia({audio: true}) : undefined;
     this.avatar = new Avatar(model, { // model is the gltf object that includes the scene, can use https://github.com/exokitxr/model-loader
       fingers: this.data.fingers,
       hair: this.data.hair,
