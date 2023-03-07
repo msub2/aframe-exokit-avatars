@@ -107,5 +107,9 @@ AFRAME.registerComponent('avatar', {
     this.avatar.setFloorHeight(0) // sets the floor height that exokit uses to determine the pose
  
     this.avatar.update();
+  },
+
+  remove: function () {
+    AFRAME.scenes[0].object3D.remove(this.avatar.model);
   }
 });
