@@ -59,9 +59,8 @@ AFRAME.registerComponent('avatar', {
     const model = await new Promise((res, rej) => {
       new THREE.GLTFLoader().load(this.data.model, gltf => {
         gltf.frustumCulled = false;
-        const meshes = gltf.scene.children[0].children;
-        meshes.forEach(o => {
-          if (o.type === 'SkinnedMesh') {
+        gltf.scene.traverse(o => {
+          if (o.type === 'SkinnedMesh' || o.type === 'Mesh') {
             o.material.side = THREE.FrontSide;
             o.frustumCulled = false;
           }
