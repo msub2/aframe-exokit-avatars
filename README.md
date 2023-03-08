@@ -41,16 +41,17 @@ The following is the most basic scene setup that will load in an avatar:
 
 ## Schema
 
-| Property   | Type     | Description                                                      | Default Value |
-| ---------- | -------- | ---------------------------------------------------------------- | ------------- |
-| model      | model    | A selector or path to an avatar model                            |               |
-| player     | selector | An element representing the player/camera rig                    | #player       |
-| head       | selector | An element representing the main camera of the scene             | #head         |
-| leftHand   | selector | An element representing the tracked left hand                    | #leftHand     |
-| rightHand  | selector | An element representing the tracked right hand                   | #rightHand    |
-| fingers    | bool     | Whether or not to animate finger poses (point, grip)             | true          |
-| hair       | bool     | Whether or not to animate hair                                   | true          |
-| decapitate | bool     | Whether or not to remove the head of the model                   | false         |
-| visemes    | bool     | Whether or not to animate visemes on the model (mouth, blinking) | true          |
-| muted      | bool     | Whether or not to passthrough mic audio into the page.           | true          |
-| debug      | bool     | Whether or not to render debug meshes.                           | false         |
+| Property    | Type     | Description                                                      | Default Value |
+| ----------- | -------- | ---------------------------------------------------------------- | ------------- |
+| model       | model    | A selector or path to an avatar model                            |               |
+| thirdPerson | boolean  | Whether this is an avatar for a different player than the user   | false         |
+| player      | selector | An element representing the player/camera rig                    | #player       |
+| head        | selector | An element representing the main camera of the scene             | #head         |
+| leftHand    | selector | An element representing the tracked left hand                    | #leftHand     |
+| rightHand   | selector | An element representing the tracked right hand                   | #rightHand    |
+| fingers     | bool     | Whether or not to animate finger poses (point, grip)             | true          |
+| hair        | bool     | Whether or not to animate hair                                   | true          |
+| decapitate  | bool     | Whether or not to remove the head of the model                   | false         |
+| visemes     | bool     | Whether or not to animate visemes on the model (mouth, blinking) | true          |
+| muted       | bool     | Whether or not to passthrough mic audio into the page.           | true          |
+| debug       | bool     | Whether or not to render debug meshes.                           | false         |
